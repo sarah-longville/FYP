@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive pricing table.">
+
+    <title>Home</title>
+    <script src="http://yui.yahooapis.com/3.15.0/build/yui/yui-min.js"></script>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main-grid-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/main-grid.css">
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/pricing.css">
+    <!--<![endif]-->
+
+</head>
+
+<body>
+		<!-- drop down menu -->
+        <div id="demo-horizontal-menu">
+            <a href="#" class="pure-menu-heading">The Church</a>
+             <!-- drop down items -->
+             <ul id="std-menu-items">
+                <li>
+                    <a href="new-here.html">I'm new here</a>
+                    <ul>
+                        <li>
+                            <a href="find-us.html">Find Us</a>
+                        </li>
+                        <li>
+                            <a href="whos-who.html">Who's Who</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <ul id="std-menu-items">
+                    <li>
+                        <a href="events.html">Events</a>
+                        <ul>
+                            <li>
+                                <a href="alpha.html">Alpha</a>
+                            </li>
+                            <li>
+                                <a href="house-groups.html">House Groups</a>
+                            </li>
+                            <li>
+                                <a href="sundays.html">Sundays</a>
+                            </li>
+                        </ul>
+                        <li>
+                        	<a href="talks.html">Talks</a>
+                        </li>
+                        <li>
+                            <a href="links.html">Links</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.php">Contact Us</a>
+                        </li>
+
+        </div>
+
+		<!-- javascript to make drop downs work -->
+        <script>
+            YUI({
+                classNamePrefix: 'pure'
+            }).use('gallery-sm-menu', function(Y) {
+
+                var horizontalMenu = new Y.Menu({
+                    container: '#demo-horizontal-menu',
+                    sourceNode: '#std-menu-items',
+                    orientation: 'horizontal',
+                    hideOnOutsideClick: false,
+                    hideOnClick: false
+                });
+
+                horizontalMenu.render();
+                horizontalMenu.show();
+
+            });
+        </script>
+
+        <div class="banner">
+            <h1 class="banner-head">
+       	Welcome to The Church
+    </h1>
+        </div>
+        
+                <div class="l-content">
+        					<!-- these are boxes of information pointing the user to important information; welcome message, events, new here page, twitter, alpha and recommended talks -->
+        					<div class="pricing-tables pure-g">
+                            <div class="pure-u-1 pure-u-med-1-3">
+                        	<div class="pricing-table pricing-table-free pricing-table-selected">
+                            <div class="pricing-table-header">
+                                        <h2>Welcome</h2>
+  										<h4>
+                                        We are a church of 100 based in Plympton passionate about seeing lives transformed through the love of God. You would be so
+                                        welcome here! We would love to see you and get to know you.</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="pure-u-1 pure-u-med-1-3">
+                    <div class="pricing-table pricing-table-biz">
+                        <div class="pricing-table-header">
+                           <!-- this div styles the font used on the links --> <div class="box-links">
+                                <a href="events.html">
+                                    <h2>Future</h2>
+                                </a>
+
+                                <a href="events.html">
+                                    <span class="pricing-table-price">
+                                        Events
+  </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pure-u-1 pure-u-med-1-3">
+                    <div class="pricing-table pricing-table-enterprise pricing-table-selected">
+                        <div class="pricing-table-header">
+
+                            <div class="box-links">
+                                <a href="talks.html">
+                                    <h2>Recommended</h2>
+                                </a>
+
+                                <a href="talks.html">
+                                    <span class="pricing-table-price">
+                                        Talks
+                                  </span>
+                                </a>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                    <div class="pure-u-1 pure-u-med-1-3">
+                        <div class="pricing-table pricing-table-free">
+                            <div class="pricing-table-header">
+                                <div class="box-links">
+                                    <a href="https://twitter.com/sarah_longville">
+                                        <h2>Follow Us</h2>
+                                    </a>
+
+                                    <a href="https://twitter.com/sarah_longville">
+                                        <span class="pricing-table-price">
+                                            <img src="Twitter_logo_blue.png" alt="Twitter">
+                                   </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <div class="pure-u-1 pure-u-med-1-3">
+                    <div class="pricing-table pricing-table-biz">
+                        <div class="pricing-table-header">
+                            <div class="box-links">
+                                <a href="alpha.html">
+                                    <h2>Join</h2>
+                                </a>
+
+                                <a href="alpha.html">
+                                    <span class="pricing-table-price">
+                                        Alpha
+                                </span>                                        
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="pure-u-1 pure-u-med-1-3">
+                        <div class="pricing-table pricing-table-enterprise">
+                            <div class="pricing-table-header">
+                                <div class="box-links">
+                                    <a href="new-here.html">
+                                        <h2>New</h2>
+                                    </a>
+
+                                    <a href="new-here.html">
+                                        <span class="pricing-table-price">
+                                            Here?
+                                   </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end pricing-tables -->
+                
+                </div>
+
+                <div class="footer l-box">
+                    <p>
+                        Header image courtesy of
+                        <a href='http://unsplash.com/'>Unsplash</a>.
+                    </p>
+                </div>
+
+    </body>
+
+</html>

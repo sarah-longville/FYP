@@ -1,0 +1,130 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive pricing table.">
+
+    <title>Talks</title>
+    <script src="http://yui.yahooapis.com/3.15.0/build/yui/yui-min.js"></script>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main-grid-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/main-grid.css">
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/pricing.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+
+</head>
+
+<body>
+
+		<!-- drop down menu -->
+        <div id="demo-horizontal-menu">
+            <a href="index.html" class="pure-menu-heading">The Church</a>
+          <!-- drop down items -->  <ul id="std-menu-items">
+                <li>
+                    <a href="new-here.html">I'm new here</a>
+                    <ul>
+                        <li>
+                            <a href="find-us.html">Find Us</a>
+                        </li>
+                        <li>
+                            <a href="whos-who.html">Who's Who</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <ul id="std-menu-items">
+                    <li>
+                        <a href="#">Events</a>
+                        <ul>
+                            <li>
+                                <a href="alpha.html">Alpha</a>
+                            </li>
+                            <li>
+                                <a href="house-groups.html">House Groups</a>
+                            </li>
+                            <li>
+                                <a href="sundays.html">Sundays</a>
+                            </li>
+                        </ul>
+
+                        <li>
+                            <a href="talks.html">Talks</a>
+                        </li>
+                        <li>
+                            <a href="links.html">Links</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.php">Contact Us</a>
+                        </li>
+
+        </div>
+
+		<!-- javascript for drop down menu -->
+        <script>
+            YUI({
+                classNamePrefix: 'pure'
+            }).use('gallery-sm-menu', function(Y) {
+
+                var horizontalMenu = new Y.Menu({
+                    container: '#demo-horizontal-menu',
+                    sourceNode: '#std-menu-items',
+                    orientation: 'horizontal',
+                    hideOnOutsideClick: false,
+                    hideOnClick: false
+                });
+
+                horizontalMenu.render();
+                horizontalMenu.show();
+
+            });
+        </script>
+
+        <div class="banner">
+            <h1 class="banner-head">
+       	Welcome to The Church
+    </h1>
+        </div>
+        
+        <div class="l-content">
+            <div id="main">
+                <div class="header">
+                    <h1>Talks</h1>
+                </div>
+
+                <div class="content">
+                
+                <p>We don't have our own talks available online as of yet but we are working on it. In the mean time we would highly recommend checking out some of the 
+                podcasts from Holy Trinity Brompton, Hillsong London and Bethel.</p>
+
+<!-- itunes widget for podcast playlist -->
+<iframe src="http://widgets.itunes.apple.com/widget.html?c=us&brc=FFFFFF&blc=FFFFFF&trc=FFFFFF&tlc=FFFFFF&d=We%20are%20yet%20to%20create%20Podcasts%20but%20here%20are%20some%20great%20talks%20from%20other%20churches.&t=Recommended%20Talks&m=podcast&e=podcast&w=325&h=370&ids=80260791,257237617,605028949&wt=playlist&partnerId=&affiliate_id=&at=&ct=" frameborder=0 style="overflow-x:hidden;overflow-y:hidden;width:325px;height: 370px;border:0px"></iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer l-box">
+            <p>
+                Header image courtesy of
+                <a href='http://unsplash.com/'>Unsplash</a>.
+            </p>
+        </div>
+
+    </body>
+
+</html>

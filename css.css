@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+
+a { 
+	color: #94b2d0;
+	text-decoration:underline;
+	cursor: pointer;
+}
+
+#container { 
+	width:800px;
+	padding: 20px;
+}
+
+#logo {
+	padding: 0px 0px 20px 0px;
+}
+
+caption {
+	text-align:center;	
+}
+
+#toolbar [data-wysihtml5-action] { 
+	float:right;
+	padding: 5px;
+}
+
+textarea { 
+	height: 280px;
+	border: 2px solid #94b2d0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 800px;
+	padding: 5px;
+}
+
+textarea:focus { 
+	color: black;
+	border: 2px solid #94b2do;
+}
+
+.wysihtml5-command-active {
+	font-weight: bold;
+}
+
+a[data-wysihtml-command-value="PageTitle"]{
+	color: #94b2d0;
+	font-family:"Times New Roman", Times, serif;
+	font-size:30px;
+}
+
+a[data-wysihtml-command-value="MainText"]{
+	color: black;
+	font-family:"Times New Roman", Times, serif;
+	font-size:12px;
+}
+
+a[data-wysihtml-command-value="LinkText"]{
+	color: #94b2d0;
+	font-family:"Times New Roman", Times, serif;
+	font-size:12px;
+	text-decoration:underline;
+}
+
+.wysiwyg-text-align-right {
+  text-align: right;
+}
+
+.wysiwyg-text-align-center {
+  text-align: center;
+}
+
+.wysiwyg-text-align-left {
+  text-align: left;
+}
+
+.wysiwyg-text-align-justify {
+  text-align: justify;
+}
+
+.wysiwyg-float-left {
+  float: left;
+  margin: 0 8px 8px 0;
+}

@@ -1,0 +1,36 @@
+    <script src="http://yui.yahooapis.com/3.15.0/build/yui/yui-min.js"></script>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+
+	   <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main-grid-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/main-grid.css">
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/pricing.css">
+    <!--<![endif]-->
+	
+h1 {
+	font-family: Calibri;
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+}
+
+h2 {
+	font-family: Calibri;
+	font-size: 20px;
+	color: #333;
+}
+
+h3 { 
+	font-family: Calibri;
+	font-size: 16px;
+	color: #666666;
+}

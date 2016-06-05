@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive pricing table.">
+
+    <title>Who's who</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://yui.yahooapis.com/3.15.0/build/yui/yui-min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main-grid-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/main-grid.css">
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/pricing.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+
+</head>
+
+<body>
+
+		<!-- drop down menu, created using one of the menus from purecss-->
+        <div id="demo-horizontal-menu">
+            <a href="index.html" class="pure-menu-heading">The Church</a>
+            <ul id="std-menu-items">
+                <li>
+                    <a href="new-here.html">I'm new here</a>
+                    <ul>
+                        <li>
+                            <a href="find-us.html">Find Us</a>
+                        </li>
+                        <li>
+                            <a href="whos-who.html">Who's Who</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--drop down items--><ul id="std-menu-items">
+                    <li>
+                        <a href="events.html">Events</a>
+                        <ul>
+                            <li>
+                                <a href="alpha.html">Alpha</a>
+                            </li>
+                            <li>
+                                <a href="house-groups.html">House Groups</a>
+                            </li>
+                            <li>
+                                <a href="sundays.html">Sundays</a>
+                            </li>
+                        </ul>
+                        <li>
+                        	<a href="talks.html">Talks</a>
+                        </li>
+                        <li>
+                            <a href="links.html">Links</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.php">Contact Us</a>
+                        </li>
+
+        </div>
+
+		<!-- javascript to make drop downs work correctly -->
+        <script>
+            YUI({
+                classNamePrefix: 'pure'
+            }).use('gallery-sm-menu', function(Y) {
+
+                var horizontalMenu = new Y.Menu({
+                    container: '#demo-horizontal-menu',
+                    sourceNode: '#std-menu-items',
+                    orientation: 'horizontal',
+                    hideOnOutsideClick: false,
+                    hideOnClick: false
+                });
+
+                horizontalMenu.render();
+                horizontalMenu.show();
+
+            });
+        </script>
+        
+        <div class="banner">
+            <h1 class="banner-head">
+       	Welcome to The Church
+    </h1>
+        </div>
+        
+        <div class="l-content">
+            <div id="main">
+                <div class="header">
+                    <h1>Who's who</h1>
+                    <h2>Meet the team</h2>
+                </div>
+                                  
+                    <div class="content">
+
+                    <div class="bs-example">
+                    <div class="container-fluid">
+                    <!-- thumbnails created using bootstrap. for each member of the church staff there is a separate thumbnail -->
+                        <div class="row">
+                           <!-- there will be 4 thumbnails in a row --> <div class="col-xs-6 col-md-3">
+                                <div class="thumbnail">
+                                    <img src="caleb.jpg" alt="Caleb Jones">
+                                    <div class="caption">
+                                        <h3>Caleb Jones</h3>
+                                        <p>Caleb is the Pastor of our church. He is married to Abbie and they have 3 children; Josiah, Jacob and Ethel. Caleb has been pastor here for the past 8 years and is an avid Plymouth Argyle supporter. His is responsibility is to lead us as a church; is in charge of pastoral care and offers fantastic teaching.</p>
+
+                                           <!-- when the user selects the Email button a new email will be created with the subject Caleb Jones; obviously the subject changes depending on which persons thumbnail it is. --> <div class="box-links">
+                                                <a href="mailto:sazlongvillage@hotmail.co.uk?Subject=Caleb%20Jones" target="_top" class="btn btn-primary" role="button">Email</a>
+                                            </div>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                            <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="jenny.jpg" alt="Jenny Adams">
+                                <div class="caption">
+                                    <h3>Jenny Adams</h3>
+                                    <p>Jenny is our church secretary and she does a great job. She is married to Tom and they have 2 kids; Josie and Ben. They have been members of our church since they were students, 10 years ago. She has been our secretary for 5 years. Jenny has a passion for getting to know people and is a valued member of our church family. Jenny is in charge of ensuring we all know what we're meant to be doing and organising the diaries.</p>
+
+                                        <div class="box-links">
+                                            <a href="mailto:sazlongvillage@hotmail.co.uk?Subject=Jenny%20Adams" target="_top" class="btn btn-primary" role="button">Email</a>											</div>
+                                          <!--close box-links div--></div>
+                                    </div>
+                                    </div>                             
+
+                            <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="daniel.jpg" alt="Dan Sellick">
+                                <div class="caption">
+                                    <h3>Dan Sellick</h3>
+                                    <p>Dan is one of our leaders; his role within the church is to encourage people to get involved and organise any outreach that we do. He is married to Hannah and they joined The Church in 2011 when they moved to Plympton following their marriage.</p>
+      
+                                        <div class="box-links">
+                                            <a href="mailto:sazlongvillage@hotmail.co.uk?Subject=Dan%20Sellick" target="_top" class="btn btn-primary" role="button">Email</a>                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-md-3">
+                                    <div class="thumbnail">
+                                        <img src="esther.jpg" alt="Esther Stevens">
+                                        <div class="caption">
+                                            <h3>Esther Stevens</h3>
+                                            <p>Esther is our second leader and she works with Dan. Her main role within the church is in organising worship and prayer. She is married to Noah and together they have 4 children; Matthew, Mark, Luke and George. Noah grew up in the church and Esther joined when they got married in 2008.</p>
+                                                <div class="box-links">
+                                                    <a href="mailto:sazlongvillage@hotmail.co.uk?Subject=Esther%20Stevens" target="_top" class="btn btn-primary" role="button">Email</a>
+
+                                                    </div>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                        </div>
+
+                    <div class="footer l-box">
+                        <p>
+                            Header image courtesy of
+                            <a href='http://unsplash.com/'>Unsplash</a>.
+                        </p>
+                    </div>
+                </div>
+
+    </body>
+
+</html>

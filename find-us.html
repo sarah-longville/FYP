@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive pricing table.">
+
+    <title>Find Us</title>
+    <script src="http://yui.yahooapis.com/3.15.0/build/yui/yui-min.js"></script>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main-grid-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/main-grid.css">
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/pricing.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+
+</head>
+
+<body>
+
+		<!-- drop down menu -->
+        <div id="demo-horizontal-menu">
+            <a href="index.html" class="pure-menu-heading">The Church</a>
+            <!-- drop down items -->
+            <ul id="std-menu-items">
+                <li>
+                    <a href="new-here.html">I'm new here</a>
+                    <ul>
+                        <li>
+                            <a href="find-us.html">Find Us</a>
+                        </li>
+                        <li>
+                            <a href="whos-who.html">Who's Who</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <ul id="std-menu-items">
+                    <li>
+                        <a href="events.html">Events</a>
+                        <ul>
+                            <li>
+                                <a href="alpha.html">Alpha</a>
+                            </li>
+                            <li>
+                                <a href="house-groups.html">House Groups</a>
+                            </li>
+                            <li>
+                                <a href="sundays.html">Sundays</a>
+                            </li>
+                        </ul>
+
+                        <li>
+                        	<a href="talks.html">Talks</a>
+                        </li>
+                        <li>
+                            <a href="links.html">Links</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.php">Contact Us</a>
+                        </li>
+
+        </div>
+
+		<!-- javascript to make drop downs work -->
+        <script>
+            YUI({
+                classNamePrefix: 'pure'
+            }).use('gallery-sm-menu', function(Y) {
+
+                var horizontalMenu = new Y.Menu({
+                    container: '#demo-horizontal-menu',
+                    sourceNode: '#std-menu-items',
+                    orientation: 'horizontal',
+                    hideOnOutsideClick: false,
+                    hideOnClick: false
+                });
+
+                horizontalMenu.render();
+                horizontalMenu.show();
+
+            });
+        </script>
+
+        <div class="banner">
+            <h1 class="banner-head">
+       	Welcome to The Church
+    </h1>
+        </div>
+        
+        <div class="l-content">
+            <div id="main">
+                <div class="header">
+                    <h1>Find Us</h1>
+                </div>
+
+                <div class="content">
+                    <p>
+                        The Church meets in Plympton; we're the big yellow building on the Ridgeway - you can't miss us. You can find us on Google maps! We also have our own car park. We meet here for all our Sunday services and several other events but to get a full list of what is going on visit the
+                        <a href="#">Events</a>page.
+                    </p>
+
+                    <p>
+                    <!-- google maps embedded in page. -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.8296053774457!2d-4.057096!3d50.388759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486cec153c20e101%3A0x76b4b9ceaaf0b5a2!2sPlympton!5e0!3m2!1sen!2suk!4v1396966387504" width="800" height="600" frameborder="0" style="border:0"></iframe>
+                    </p>
+
+                </div>
+                
+                </div>
+
+                <div class="footer l-box">
+                    <p>
+                        Header image courtesy of
+                        <a href='http://unsplash.com/'>Unsplash</a>.
+                    </p>
+                </div>
+            </div>
+
+    </body>
+
+</html>

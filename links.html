@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive pricing table.">
+
+    <title>Links</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--Javascript required for drop down menu-->
+    <script src="http://yui.yahooapis.com/3.15.0/build/yui/yui-min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main-grid-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/main-grid.css">
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/pricing.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+
+</head>
+
+<body>
+		<!-- navigation bar -->
+        <div id="demo-horizontal-menu">
+            <a href="index.html" class="pure-menu-heading">The Church</a>
+            <ul id="std-menu-items">
+                <li>
+                    <a href="new-here.html">I'm new here</a>
+                    <ul>
+                        <li>
+                            <a href="find-us.html">Find Us</a>
+                        </li>
+                        <li>
+                            <a href="whos-who.html">Who's Who</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <ul id="std-menu-items">
+                    <li>
+                        <a href="events.html">Events</a>
+                        <ul>
+                            <li>
+                                <a href="alpha.html">Alpha</a>
+                            </li>
+                            <li>
+                                <a href="house-groups.html">House Groups</a>
+                            </li>
+                            <li>
+                                <a href="sundays.html">Sundays</a>
+                            </li>
+                        </ul>
+
+                        <li>
+                        	<a href="talks.html">Talks</a>
+                        </li>
+                        <li>
+                            <a href="links.html">Links</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.php">Contact Us</a>
+                        </li>
+
+        </div>
+
+		<!-- javascript for drop down aspect of navigation to work-->
+        <script>
+            YUI({
+                classNamePrefix: 'pure'
+            }).use('gallery-sm-menu', function(Y) {
+
+                var horizontalMenu = new Y.Menu({
+                    container: '#demo-horizontal-menu',
+                    sourceNode: '#std-menu-items',
+                    orientation: 'horizontal',
+                    hideOnOutsideClick: false,
+                    hideOnClick: false
+                });
+
+                horizontalMenu.render();
+                horizontalMenu.show();
+
+            });
+        </script>
+        
+        <!-- image a long the top of the page-->	
+        <div class="banner">
+            <h1 class="banner-head">
+       	Welcome to The Church
+    </h1>
+        </div>
+        
+		
+            <!-- this div centers the content --> <div class="l-content">
+            <div id="main">
+                <div class="header">
+                    <h1>Links</h1>
+                    <h2>Charities and Christian organisations we support</h2>
+                </div>
+
+                <div class="content">
+                    <div class="bs-example">
+                    <!-- thumbnail cotainer. there is a separate thumbnail for each charity or Christian organisation the church is linked with, styled using bootstrap-->
+                        <div class="row">
+                             <!--div means that there will 4 thumbnails in a row--><div class="col-xs-6 col-sm-3">
+                                <div class="thumbnail">
+                                    <img src="open_doors_logo.jpg" alt="Open Doors">
+                                    <div class="caption">
+                                        <h3>Open Doors</h3>
+                                        <p>"Open Doors is an international ministry serving persecuted Christians and churches worldwide. We supply Bibles, leadership training, literacy programmes, livelihood support and advocacy services. We also seek to mobilise the church in the UK & Ireland to serve Christians living under religious persecution."</p>
+                                            <!-- when the user selects the Visit website button they are taken to the Open Doors website or whatever website the thumbnail is about.--><div class="box-links">
+                                                <a href="http://www.opendoorsuk.org/" class="btn btn-primary" role="button">Visit website</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                                        <div class="row">
+                            <div class="col-xs-6 col-sm-3">
+                                                <div class="thumbnail">
+                                                    <img src="spring-harvest.jpg" alt="Spring Harvest">
+                                                    <div class="caption">
+                                                        <h3>Spring Harvest</h3>
+                                                        <p>"Spring Harvest is 'a week of “modern-style worship”, Bible teaching and workshops about the relevance of Christian faith to everyday life. It takes place at Butlins, Minehead. As church we attend together and have a wonderful getting to know each other more and growing in our passion to follow Christ!"</p>
+                                                            <div class="box-links">
+                                                                <a href="http://www.springharvest.org/" class="btn btn-primary" role="button">Visit website</a>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                    <div class="row">
+                            <div class="col-xs-6 col-sm-3">
+                                            <div class="thumbnail">
+                                                <img src="wycliffe-logo-colour.jpg" alt="Wycliffe">
+                                                <div class="caption">
+                                                    <h3>Wycliffe</h3>
+                                                    <p>"Wycliffe Bible Translators believe that the Bible is the best way for people to come to know and understand who God is. Our vision is that by working with churches, organisations and individuals from around the world all people will have access to God's word in a language that they truly understand."</p>
+                                                        <div class="box-links">
+                                                            <a href="http://wycliffe.org.uk/" class="btn btn-primary" role="button">Visit website</a>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>                                                                        
+         
+                                           <div class="row">
+                            <div class="col-xs-6 col-sm-3">
+                                                    <div class="thumbnail">
+                                                        <img src="soul-survivor.jpg" alt="Soul Survivor">
+                                                        <div class="caption">
+                                                            <h3>Soul Survivor</h3>
+                                                            <p>"The heart of Soul Survivor is to envision young people of all denominations to capture first a vision of Jesus, and then to equip, train, empower and release them into his ministry in their every day lives."</p>
+                                                                <div class="box-links">
+                                                                    <a href="http://soulsurvivor.com/" class="btn btn-primary" role="button">Visit website</a>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+ </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+				<!--footer at the bottom of the page. Just a blue strip along bottom with a link to where the header image has come from-->
+                <div class="footer l-box">
+                    <p>
+                        Header image courtesy of
+                        <a href='http://unsplash.com/'>Unsplash</a>.
+                    </p>
+                </div>
+    </body>
+
+</html>

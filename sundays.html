@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive pricing table.">
+
+    <title>Sundays</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://yui.yahooapis.com/3.15.0/build/yui/yui-min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.1.1/js/transition.js"></script>
+    <script src="bootstrap-3.1.1/js/tab.js"></script>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main-grid-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/main-grid.css">
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/pricing.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+
+</head>
+
+<body>
+
+		<!-- drop down menu -->
+        <div id="demo-horizontal-menu">
+            <a href="index.html" class="pure-menu-heading">The Church</a>
+                        <!-- drop down items --> <ul id="std-menu-items">
+                <li>
+                    <a href="new-here.html">I'm new here</a>
+                    <ul>
+                        <li>
+                            <a href="find-us.html">Find Us</a>
+                        </li>
+                        <li>
+                            <a href="whos-who.html">Who's Who</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <ul id="std-menu-items">
+                    <li>
+                        <a href="events.html">Events</a>
+                        <ul>
+                            <li>
+                                <a href="alpha.html">Alpha</a>
+                            </li>
+                            <li>
+                                <a href="house-groups.html">House Groups</a>
+                            </li>
+                            <li>
+                                <a href="sundays.html">Sundays</a>
+                            </li>
+                        </ul>
+                                                <li>
+                        	<a href="talks.html">Talks</a>
+                        </li>
+
+                        <li>
+                            <a href="links.html">Links</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.php">Contact Us</a>
+                        </li>
+
+        </div>
+
+
+		<!-- javascript for drop down menu -->
+        <script>
+            YUI({
+                classNamePrefix: 'pure'
+            }).use('gallery-sm-menu', function(Y) {
+
+                var horizontalMenu = new Y.Menu({
+                    container: '#demo-horizontal-menu',
+                    sourceNode: '#std-menu-items',
+                    orientation: 'horizontal',
+                    hideOnOutsideClick: false,
+                    hideOnClick: false
+                });
+
+                horizontalMenu.render();
+                horizontalMenu.show();
+
+            });
+        </script>
+
+		<!-- javascript for each tab to be created. when the user selects a certain tab the information will be shown -->
+        <script>
+            $('#myTab a').click(function(e) {
+                e.preventDefault()
+                $('#myTab a[href="#sundays"]').tab('show')
+            })
+
+             $('#myTab a').click(function(e) {
+                e.preventDefault()
+                $('#myTab a[href="#créche"]').tab('show')
+            })
+
+             $('#myTab a').click(function(e) {
+                e.preventDefault()
+                $('#myTab a[href="#children"]').tab('show')
+            })
+
+             $('#myTab a').click(function(e) {
+                e.preventDefault()
+                $('#myTab a[href="#yps"]').tab('show')
+            })
+        </script>
+
+        <div class="banner">
+            <h1 class="banner-head">
+       	Welcome to The Church
+    </h1>
+        </div>
+        
+        <div class="l-content">
+            <div id="main">
+                <div class="header">
+                    <h1>Sundays</h1>
+                </div>
+
+                <div class="content">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class="active">
+                            <a href="#sundays" data-toggle="tab">Sundays</a>
+                        </li>
+                        <li>
+                            <a href="#creche" data-toggle="tab">Créche</a>
+                        </li>
+                        <li>
+                            <a href="#children" data-toggle="tab">Explorers (5-11 years)</a>
+                        </li>
+                        <li>
+                            <a href="#yps" data-toggle="tab">Ignite(school years 7-11)</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                       <!-- this is the tab that will be active when the user enters the page --> <div class="tab-pane fade in active" id="sundays">
+                            <div class="header">
+                                <h2>Sundays</h2>
+                            </div>
+                            <p>
+                                Our Sunday service starts at <b>10:30am</b> meeting in The Church building on the Ridgeway and we aim to finish by <b>12:30pm</b>. We try to provide a relaxed atmosphere where all can feel welcome. We start with a time of worship and then the Children and Young People go out to their own groups. During this time those still in the church hall have teaching based on a Bible passage followed by a time of reflective worship.
+                            </p>
+
+                            <p>
+                                Once a month everyone is in the service together and the service is a lot more interactive. This is also the time where we celebrate communion together
+                            </p>
+                            
+                            <p>
+                            	We also have an evening service on Sunday starting at <b>6:30pm</b>, also in The Church building and we aim to finish by <b>8:30pm</b>. This time is more
+                                reflective than our morning service. We spend more time in sung worship and prayer. In addition to this we normally have a short sermon but                                 at certain times during the year often have a prayer and praise evening.
+                            </p>
+
+                            <p>For more information on our top quality Young Peoples programme click on the tabs above. All of those involved with our childrens have an up to date DBS(CRB).</p>
+                            
+<!-- centers the image. bootstrap --><div class="col-md-offset-3"> <img src="2014-04-12 15.38.jpg" alt="violin"> </div>
+ 	                        </div>
+
+                        <div class="tab-pane fade" id="creche">
+                            <div class="header">
+                                <h2>Créche</h2>
+                            </div>
+                            During the church service we offer a créche for children aged 0-4. During this time they will be played with by responsible adults; playing games and reading Bible stories. Parents can be assured their children will be well looked after so you can enjoy the service but you are welcome to stay in the room if you wish to. 
+                                                        
+                           <div class="col-md-offset-3"> <img src="IMG_8503.jpg" alt="child at creche"> </div>
+                           
+                        </div>
+
+                        <div class="tab-pane fade" id="children">
+                            <div class="header">
+                                <h2>Explorers(5-11 years)</h2>
+                            </div>
+                            <p>We offer a high quality programme for the children in our church. We start off in the church service and then after the church has prayed for us we leave for Explorers.</p>
+                            <p> We read the Bible (normally the same passage as in the adults service), do painting and other crafts, make friends, singing and generally have fun! Recently we have been looking at the miracles of Jesus and how he changes peoples lives for the better. </p>
+                            <p>Our aim is to get to know Jesus better and make friends too.</p>
+                            
+                           <div class="col-md-offset-3"><img src="2014-04-12-16.13.jpg" alt="John 3 v 16"> </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="yps">
+                            <div class="header">
+                                <h2>Ignite(school years 7-11)</h2>
+                            </div>
+                            <p>At Ignite we are passionate about learning more about God's love for us and the impact he can have on our lives. </p>
+                            
+                            <p>We read the Bible together (normally the same passage as in the adults service), discuss what the passage is saying and ask questions about it. This is an interactive and relaxed time.                                 We also sometimes have a time of worship and generally have fun together. </p> 
+                            <p>Recently we have been looking at Romans and how nothing can separate from the love of God.</p>
+                            
+                            <div class="col-md-offset-3"><img src="2014-04-12-08.jpg" alt="Romans 8 v 35"> </div>
+
+                        </div>
+                    </div>
+
+					<!-- javascript meaning the tabs can be toggled between -->
+                    <script>
+                        $(function() {
+                            $('#myTab a:last').tab('show')
+                        })
+
+                         $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+                            e.target // activated tab
+                            e.relatedTarget // previous tab
+                        })
+                    </script>
+               
+                </div>
+                
+                </div>
+
+                <div class="footer l-box">
+                    <p>
+                        Header image courtesy of
+                        <a href='http://unsplash.com/'>Unsplash</a>.
+                    </p>
+                </div>
+            </div>
+
+    </body>
+
+</html>
